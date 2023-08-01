@@ -1,0 +1,33 @@
+### ADD BORROWERS
+POST http://localhost:3000/borrowers
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+{
+  "name": "John Bro",
+  "address": "New York",
+  "phone": "1-212-998-1212"
+}
+
+### GET BORROWERS
+GET http://localhost:3000/borrowers/?sort[by]=phone&sort[order]=ASC
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+
+### GET BORROWER
+GET http://localhost:3000/borrowers/64c3e515e95a8c3773a14221
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+### PATCH BORROWERS
+PATCH http://localhost:3000/borrowers/64c3e515e95a8c3773a14221
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjMzk3NjY4ODVmMGMzNTg3Y2QxMGFhIiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDU0MDE1MywiZXhwIjoxNjkwNjI2NTUzfQ.TUKdc4HRBwaixy4Og-qGRuUn1NRDcj9IdW0GNp-MyRk
+
+{
+  "name": "Shaxboz"
+}
+
+
+### DELETE BORROWERS
+DELETE http://localhost:3000/borrowers/64c3e515e95a8c3773a14221
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjMzk3NjY4ODVmMGMzNTg3Y2QxMGFhIiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDU0MDE1MywiZXhwIjoxNjkwNjI2NTUzfQ.TUKdc4HRBwaixy4Og-qGRuUn1NRDcj9IdW0GNp-MyRk

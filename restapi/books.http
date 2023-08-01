@@ -1,0 +1,35 @@
+### ADD BOOKS
+POST http://localhost:3000/books
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+{
+  "title": "Atom odatlar",
+  "copies": 6000,
+  "publisher": "64c562a63d774cb82de8f1bb",
+  "author": "64c3fe5d91e3ee4895288b96"
+}
+
+### GET BOOKS
+GET http://localhost:3000/books/?sort[by]=copies&sort[order]=DESC
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+
+### GET BOOK
+GET http://localhost:3000/books/64c5d99e3841d81467ae2762
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+### PATCH BOOKS
+PATCH http://localhost:3000/books/64c485ca28d8d36d64565af9
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+{
+  "title": "Boy ota kambag'al ota",
+  "copies": 1000
+}
+
+
+### DELETE BOOKS
+DELETE http://localhost:3000/books/64c495cbd268af00280e993d
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4

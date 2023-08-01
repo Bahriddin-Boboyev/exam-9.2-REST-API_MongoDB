@@ -1,0 +1,51 @@
+### ADD ADMIN
+POST http://localhost:3000/admins
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+{
+  "full_name": "JohnDoe-22",
+  "username": "johndoe-22",
+  "password": "12345"
+}
+
+### LOGIN ADMIN
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "bahriddin",
+  "password": "12345"
+}
+
+### GET ADMINS
+GET http://localhost:3000/admins/?
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+### GET ADMIN
+GET http://localhost:3000/admin/64c3afdb3c3dd867043665df
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjMzk3NjY4ODVmMGMzNTg3Y2QxMGFhIiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDU0MDE1MywiZXhwIjoxNjkwNjI2NTUzfQ.TUKdc4HRBwaixy4Og-qGRuUn1NRDcj9IdW0GNp-MyRk
+
+### PATCH ME
+PATCH http://localhost:3000/admins/me
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmZGIzYzNkZDg2NzA0MzY2NWRmIiwic3VwZXJBZG1pbiI6ZmFsc2V9LCJpYXQiOjE2OTA1NDYyODMsImV4cCI6MTY5MDYzMjY4M30.NdCl2iITlMQxdPjrSZFR2yQADu13HRhmXY63yorb-VU
+
+{
+  "full_name": "John Doe-2"
+}
+
+### PATCH ADMIN
+PATCH http://localhost:3000/admins/64c538cf85361241fcee5e5b
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+{
+  "full_name": "JohnDoe-22",
+  "username": "johndoe-2"
+}
+
+
+### DELETE ADMIN
+DELETE http://localhost:3000/admins/64c528526c7ce419579c1a0d
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4

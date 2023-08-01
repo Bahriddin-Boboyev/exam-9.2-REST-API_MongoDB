@@ -1,0 +1,21 @@
+### ADD LOANS
+// due_date -> kunda kiritish kerak M: 30
+POST http://localhost:3000/loan
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+{
+  "book": "64c515b6de2595cd10ec77be",
+  "borrower": "64c3e515e95a8c3773a14221",
+  "due_date": 20
+  
+}
+
+### GET LOANS
+GET http://localhost:3000/loan/?sort[by]=out_date&sort[order]=ASC
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+
+### GET LOAN
+GET http://localhost:3000/loan/64c4f9407b88a36687717a58
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4

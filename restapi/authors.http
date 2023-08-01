@@ -1,0 +1,31 @@
+### ADD AUTHORS
+POST http://localhost:3000/authors
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+{
+  "name": "Elon Musk"
+}
+
+### GET AUTHORS
+GET http://localhost:3000/authors/?sort[by]=name&sort[order]=DESC
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+
+### GET AUTHOR
+GET http://localhost:3000/authors/64c3fe5d91e3ee4895288b96
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+### PATCH AUTHORS
+PATCH http://localhost:3000/authors/64c555f1ca883470e587fcb8
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
+
+{
+  "name": "Elon Musk(update)"
+}
+
+
+### DELETE AUTHORS
+DELETE http://localhost:3000/authors/64c3fe5d91e3ee4895288b95
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjM2FmMGQ1YjUzZDBjYzQyN2ZjYjg3Iiwic3VwZXJBZG1pbiI6dHJ1ZX0sImlhdCI6MTY5MDYxNDgwNSwiZXhwIjoxNjkwNzAxMjA1fQ.MLC25Zwf0E4ARlVOgqe1uMNp7ArXQbEjrR8hHKZB_b4
